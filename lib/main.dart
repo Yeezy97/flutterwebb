@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutterwebb/layout.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:get/get.dart';
+import 'controllers/menu_controller.dart';
 
 void main() {
+  Get.put(MenuController());
   runApp(const MyApp());
 }
 

@@ -19,7 +19,7 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               },
             ),
       elevation: 0,
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
       title: Row(
         children: [
           Visibility(
@@ -87,4 +87,6 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
           )
         ],
       ),
+      iconTheme: IconThemeData(color: dark),
+
     );
