@@ -6,7 +6,7 @@ class CustomText extends StatelessWidget {
   final Color? color;
   final FontWeight? weight;
 
-  const CustomText({this.text, this.size, this.color, this.weight});
+  const CustomText({super.key, this.text, this.size, this.color, this.weight});
 
   @override
   Widget build(BuildContext context) {

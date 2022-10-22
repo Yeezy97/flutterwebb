@@ -8,7 +8,7 @@ const int customScreenSize = 1100;
 
 class Responsiveness extends StatelessWidget {
   const Responsiveness(
-      {@required this.largeScreen,
+      {super.key, @required this.largeScreen,
       this.mediumScreen,
       this.smallScreen,
       this.customScreen});
