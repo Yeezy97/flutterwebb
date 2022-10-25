@@ -36,26 +36,30 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               Icons.settings,
               color: dark.withOpacity(.7),
             ),
-            onPressed: (){
+            onPressed: () {
               // button function
             },
           ),
           Stack(
             children: [
-              IconButton(icon: Icon(Icons.notifications,color: dark.withOpacity(.7),),
-              onPressed: (){},),
+              IconButton(
+                icon: Icon(
+                  Icons.notifications,
+                  color: dark.withOpacity(.7),
+                ),
+                onPressed: () {},
+              ),
               Positioned(
-                top: 7,
+                  top: 7,
                   right: 7,
                   child: Container(
                     width: 12,
-                    height:12,
+                    height: 12,
                     padding: EdgeInsets.all(4),
                     decoration: BoxDecoration(
-                      color: active,
-                      borderRadius: BorderRadius.circular(30),
-                      border: Border.all(color: light, width: 2)
-                    ),
+                        color: active,
+                        borderRadius: BorderRadius.circular(30),
+                        border: Border.all(color: light, width: 2)),
                   ))
             ],
           ),
@@ -65,9 +69,12 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
             color: lightGrey,
           ),
           SizedBox(
-            width:24,
+            width: 24,
           ),
-          CustomText(text:"SAD9 L3EBRI", color: lightGrey,),
+          CustomText(
+            text: "SAD9 L3EBRI",
+            color: lightGrey,
+          ),
           SizedBox(
             width: 16,
           ),
@@ -81,12 +88,14 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               margin: EdgeInsets.all(2),
               child: CircleAvatar(
                 backgroundColor: light,
-                child: Icon(Icons.person_outline, color: dark,),
+                child: Icon(
+                  Icons.person_outline,
+                  color: dark,
+                ),
               ),
             ),
           )
         ],
       ),
       iconTheme: IconThemeData(color: dark),
-
     );

@@ -67,6 +67,8 @@ class SideMenu extends StatelessWidget {
                               Get.back();
                             }
                             // TODO: go to item name route
+                            navigationController.navigateTo(itemName);
+
                           }
                         },
                       ))
