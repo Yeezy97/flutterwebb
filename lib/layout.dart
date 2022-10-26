@@ -13,9 +13,11 @@ class SiteLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       key: scaffoldKey,
       appBar: topNavigationBar(context, scaffoldKey),
       drawer: Drawer(
+        elevation: 0,
         child: SideMenu(),
       ),
       body: Responsiveness(smallScreen: SmallScreen(),largeScreen: LargeScreen(),)
