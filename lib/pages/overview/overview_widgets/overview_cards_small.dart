@@ -20,7 +20,7 @@ class OverViewCardsSmall extends StatelessWidget {
             isActive: true,
           ),
           SizedBox(
-            width: _width / 64,
+            height: _width / 64,
           ),
           InfoCardSmall(
             title: "Packages delivered",
@@ -28,7 +28,7 @@ class OverViewCardsSmall extends StatelessWidget {
             onTap: () {},
           ),
           SizedBox(
-            width: _width / 64,
+            height: _width / 64,
           ),
           InfoCardSmall(
             title: "Cancelled deliveries ",
@@ -36,7 +36,7 @@ class OverViewCardsSmall extends StatelessWidget {
             onTap: () {},
           ),
           SizedBox(
-            width: _width / 64,
+            height: _width / 64,
           ),
           InfoCardSmall(
             title: "Schedueled deliveries",
