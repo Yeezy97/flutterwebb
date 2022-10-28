@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterwebb/constants/controllers.dart';
 import 'package:flutterwebb/helpers/responsiveness.dart';
+import 'package:flutterwebb/pages/overview/overview_widgets/overview_cards_medium.dart';
+import 'package:flutterwebb/pages/overview/overview_widgets/overview_cards_small.dart';
 import 'package:flutterwebb/widgets/custom_text.dart';
 import 'package:get/get.dart';
 
@@ -30,7 +32,16 @@ class OverViewPage extends StatelessWidget {
         ),
         Expanded(
           child: ListView(
-            children: [OverViewCardsLarge()],
+            children: [
+              if (Responsiveness.isLargeScreen(context) ||
+              Responsiveness.isMediumScreen(context))
+                if(Responsiveness.isCustomScreen(context))
+                  OverViewCardsMedium()
+              else
+                OverViewCardsLarge()
+              else
+                OverViewCardsSmall()
+            ],
           ),
         ),
       ],
